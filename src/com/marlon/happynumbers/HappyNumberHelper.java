@@ -21,7 +21,7 @@ public class HappyNumberHelper {
 		return false;		
 	}
 	
-	private static int calculateSum(int number) {
+	private int calculateSum(int number) {
 		
 		/* Plocka ut varje enskilt tal i number: 
 		 * Första talet går att få ut genom enkel division då int helt enkelt tar bort resterande decimaler. 
@@ -71,18 +71,6 @@ public class HappyNumberHelper {
 			return sum;	
 		}
 		return 0;
-	}
-	
-	// Mer effektiv metod jag senare hittade
+	}	
 
-//	private int calculateSum(int number) {
-//		
-//		int sum = 0;
-//		
-//		while(number > 0) {			
-//			sum += (number % 10) * (number % 10);
-//			number = number / 10;
-//		}		
-//		return sum;
-//	}
 }
